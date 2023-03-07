@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Verdana;
+    text-transform: capitalize;
+    color: blue;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#ff0 50%,#333 50%);
+}
+.container{
+    height: 450px;
+    width: 330px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(183, 34, 34, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+#input{
+    height: 50px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+
+}
+ul li{
+    background: #eee;
+    color: #a11515;
+    height: 30px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+ul .fa-check, .fa-trash{
+    position:absolute;
+    cursor: pointer;
+}
+ul .fa-check{
+    color: green;
+    right:35%;
+}
+ul .fa-trash{
+    color: red;
+    right: 30%;
+}
+ul .checked{
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
